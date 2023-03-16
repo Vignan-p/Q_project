@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {% include 'cdnlines.html' %}
+    <style>
+       form{
+        font-size: 15px;
+       }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="row">
+            <div class="offset-md-3 col-md-5">
+                <form id="det">
+                    <h2 class="text-center">Client Requirements</h2>
+                    <select id="Drop" required>
+                  <option class="form-control"></option>
+                  <option>client-1</option>
+                  <option>client-2</option>
+                  <option>client-3</option>
+                </select><br><br>
+                <label>Company Name : </label>
+                <input type="text"  required class="form-control">
+                <label>Campaign Name : </label>
+                <input type="text"  required class="form-control">
+                <label>Start Date</label>
+                <input type="date"  required id="dat" class="form-control">
+                <label>End Date</label>
+                <input type="date" id="dat" required class="form-control">
+                <label>Planned Impressions : </label>
+                <input type="number" class="form-control">
+                <label>Planned CPM : </label>
+                <input type="number" class="form-control">
+                <label>Planned CPC : </label>
+                <input type="number" class="form-control">
+                <label>Planned Cost : </label>
+                <input type="number" class="form-control">
+                <input type="submit" id="sub" value="Submit" onclick="Sub()">
+                <input type="reset"  value="Reset" id="clr">
+                </form>
+            </div>
+        </div>
+    </div>
+       
+    
+    <script>
+        function Sub() {
+  alert("The form was submitted");
+}
+    </script>
+    </body>
+</body>
+</html>
